@@ -7,11 +7,12 @@ branches:
 
 jobs:
 terraform:
+name: Terraform
 runs-on: ubuntu-latest
 
 ```
 steps:
-  - name: Checkout Repository
+  - name: Checkout code
     uses: actions/checkout@v3
 
   - name: Azure Login
