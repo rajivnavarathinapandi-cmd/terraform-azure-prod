@@ -31,6 +31,7 @@ module "subnet_app" {
   resource_group_name  = "rg-terraform-demo"
   virtual_network_name = "vnet-terraform-demo"
   address_prefixes     = ["10.20.2.0/24"]
+  nsg_id = module.nsg_web.nsg_id
 }
 module "nsg_web" {
   source = "./modules/nsg"
