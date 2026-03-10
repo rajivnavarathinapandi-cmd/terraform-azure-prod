@@ -15,5 +15,4 @@ variable "address_prefixes" {
 }
 variable "nsg_id" {
   type    = string
-  default = null
 }
